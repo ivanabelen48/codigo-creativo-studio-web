@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="590" viewBox="0 0 900 590" fill="none">
+  <defs><linearGradient id="bg" x1="74" y1="40" x2="830" y2="576" gradientUnits="userSpaceOnUse"><stop stop-color="#E6F4FF"/><stop offset="1" stop-color="#EDE8FF"/></linearGradient><linearGradient id="phone" x1="447" y1="94" x2="648" y2="507" gradientUnits="userSpaceOnUse"><stop stop-color="#076DFF"/><stop offset="1" stop-color="#8D54EB"/></linearGradient></defs>
+  <rect width="900" height="590" rx="26" fill="url(#bg)"/>
+  <circle cx="742" cy="113" r="73" fill="#fff" fill-opacity=".45"/><circle cx="125" cy="472" r="118" fill="#fff" fill-opacity=".4"/>
+  <path d="M104 174h174v38H381m410 41h-82v43h-88M82 372h155v-44h96" stroke="#83B8F4" stroke-opacity=".65" stroke-width="2"/><circle cx="104" cy="174" r="5" fill="#fff" stroke="#58A2F4" stroke-width="2"/><circle cx="791" cy="253" r="5" fill="#fff" stroke="#58A2F4" stroke-width="2"/>
+  <rect x="190" y="119" width="258" height="360" rx="22" fill="#fff" fill-opacity=".83" stroke="#fff" stroke-width="2"/>
+  <text x="220" y="165" fill="#687994" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">CONECTA</text>
+  <text x="220" y="207" fill="#14233D" font-family="Arial,sans-serif" font-size="29" font-weight="700">A tu manera.</text>
+  <text x="220" y="232" fill="#72819A" font-family="Arial,sans-serif" font-size="13">Todo lo que necesitás, más cerca.</text>
+  <rect x="220" y="258" width="198" height="111" rx="13" fill="url(#phone)"/>
+  <path d="M241 340c22-49 43-42 61-20 18 23 35 23 57-16 15-26 31-22 50 7" stroke="#fff" stroke-opacity=".9" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="241" cy="340" r="4" fill="#fff"/><circle cx="302" cy="320" r="4" fill="#fff"/><circle cx="359" cy="304" r="4" fill="#fff"/>
+  <text x="240" y="283" fill="#fff" font-family="Arial,sans-serif" font-size="11" opacity=".8">Cerca tuyo hoy</text>
+  <rect x="220" y="388" width="91" height="69" rx="11" fill="#F1F6FD"/><rect x="327" y="388" width="91" height="69" rx="11" fill="#F1F6FD"/>
+  <circle cx="265" cy="412" r="9" fill="#D8EAFF"/><path d="M261 412h8m-4-4v8" stroke="#1475EA" stroke-width="1.5"/><rect x="240" y="431" width="50" height="5" rx="2.5" fill="#C5D2E4"/>
+  <circle cx="372" cy="412" r="9" fill="#E9DFFF"/><path d="m368 412 3 3 5-6" stroke="#9158E7" stroke-width="1.5"/><rect x="346" y="431" width="52" height="5" rx="2.5" fill="#C5D2E4"/>
+  <rect x="474" y="73" width="207" height="430" rx="36" fill="#152037"/>
+  <rect x="484" y="83" width="187" height="410" rx="28" fill="#fff"/>
+  <rect x="543" y="94" width="69" height="14" rx="7" fill="#152037"/>
+  <text x="507" y="145" fill="#192842" font-family="Arial,sans-serif" font-size="16" font-weight="700">Hola, Sofi 👋</text>
+  <text x="507" y="164" fill="#7E8CA1" font-family="Arial,sans-serif" font-size="10">¿A dónde vamos hoy?</text>
+  <rect x="503" y="184" width="150" height="144" rx="16" fill="#F0F6FF"/>
+  <path d="M526 285c25-46 50-39 65-19 17 23 38 14 55-23" stroke="#127BFA" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="526" cy="285" r="5" fill="#127BFA"/><circle cx="646" cy="243" r="5" fill="#9A62EE"/>
+  <circle cx="548" cy="224" r="15" fill="#fff"/><path d="M544 224h8m-4-4v8" stroke="#127BFA" stroke-width="2" stroke-linecap="round"/>
+  <text x="520" y="309" fill="#667792" font-family="Arial,sans-serif" font-size="9">Tu próxima conexión te espera</text>
+  <text x="507" y="359" fill="#202C42" font-family="Arial,sans-serif" font-size="12" font-weight="700">Descubrí</text>
+  <rect x="503" y="372" width="150" height="48" rx="11" fill="#F6F8FC"/><circle cx="523" cy="396" r="11" fill="#DDEBFF"/><rect x="542" y="390" width="77" height="5" rx="2.5" fill="#BCC8D9"/><rect x="542" y="401" width="56" height="4" rx="2" fill="#E0E6EE"/>
+  <rect x="503" y="430" width="150" height="48" rx="11" fill="#F6F8FC"/><circle cx="523" cy="454" r="11" fill="#EEE2FF"/><rect x="542" y="448" width="67" height="5" rx="2.5" fill="#BCC8D9"/><rect x="542" y="459" width="82" height="4" rx="2" fill="#E0E6EE"/>
+  <circle cx="718" cy="422" r="33" fill="#fff"/><path d="M703 422h30m-15-15v30" stroke="#875BEE" stroke-width="3" stroke-linecap="round"/>
+</svg>

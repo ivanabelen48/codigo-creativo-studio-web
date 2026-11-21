@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="590" viewBox="0 0 900 590" fill="none">
+  <defs><linearGradient id="bg" x1="70" y1="28" x2="842" y2="555" gradientUnits="userSpaceOnUse"><stop stop-color="#EAF6FF"/><stop offset=".55" stop-color="#F2EDFF"/><stop offset="1" stop-color="#FFF2E8"/></linearGradient><linearGradient id="flow" x1="203" y1="191" x2="711" y2="402" gradientUnits="userSpaceOnUse"><stop stop-color="#0086FF"/><stop offset=".53" stop-color="#7560F2"/><stop offset="1" stop-color="#BB59D6"/></linearGradient></defs>
+  <rect width="900" height="590" rx="26" fill="url(#bg)"/>
+  <g stroke="#9BBFF0" stroke-opacity=".6" stroke-width="2"><path d="M79 156h95v-48h72m490 345h76v-61h61M96 448h81v-42h67"/></g>
+  <g fill="#fff" stroke="#8AB6EC" stroke-width="2"><circle cx="79" cy="156" r="5"/><circle cx="718" cy="108" r="5"/><circle cx="803" cy="392" r="5"/><circle cx="96" cy="448" r="5"/></g>
+  <text x="104" y="96" fill="#667C9C" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">PULSO · FLUJOS INTELIGENTES</text>
+  <text x="104" y="136" fill="#172640" font-family="Arial,sans-serif" font-size="28" font-weight="700">Menos tareas. Más impulso.</text>
+  <rect x="117" y="211" width="181" height="108" rx="17" fill="#fff" stroke="#E4EAF4" stroke-width="2"/>
+  <circle cx="150" cy="249" r="15" fill="#E7F3FF"/><path d="M143 249h14m-7-7v14" stroke="#147AF2" stroke-width="2" stroke-linecap="round"/>
+  <text x="176" y="245" fill="#29384E" font-family="Arial,sans-serif" font-size="13" font-weight="700">Llega un pedido</text><text x="142" y="279" fill="#7B8AA0" font-family="Arial,sans-serif" font-size="10">Formulario recibido</text><rect x="142" y="293" width="100" height="5" rx="2.5" fill="#E3EAF2"/>
+  <rect x="358" y="197" width="187" height="136" rx="19" fill="#fff" stroke="#E2E8F4" stroke-width="2"/>
+  <path d="M451 218 478 233v30l-27 16-27-16v-30l27-15Z" fill="url(#flow)"/>
+  <path d="m444 246 6 6 12-14" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="395" y="296" fill="#25364E" font-family="Arial,sans-serif" font-size="13" font-weight="700">Todo en movimiento</text><text x="396" y="315" fill="#7B8AA0" font-family="Arial,sans-serif" font-size="10">Conectado por automatización</text>
+  <rect x="605" y="211" width="181" height="108" rx="17" fill="#fff" stroke="#E4EAF4" stroke-width="2"/>
+  <circle cx="638" cy="249" r="15" fill="#F1E9FF"/><path d="m638 240 3 6 6 3-6 3-3 6-3-6-6-3 6-3 3-6Z" stroke="#9258E9" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="665" y="245" fill="#29384E" font-family="Arial,sans-serif" font-size="13" font-weight="700">Equipo informado</text><text x="630" y="279" fill="#7B8AA0" font-family="Arial,sans-serif" font-size="10">Notificación al instante</text><rect x="630" y="293" width="119" height="5" rx="2.5" fill="#E3EAF2"/>
+  <path d="M298 265h58m189 0h60" stroke="url(#flow)" stroke-width="4" stroke-linecap="round"/><path d="m348 258 8 7-8 7m249-14 8 7-8 7" stroke="#7761F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="327" cy="265" r="4" fill="#fff" stroke="#4987F1" stroke-width="2"/><circle cx="575" cy="265" r="4" fill="#fff" stroke="#A658DF" stroke-width="2"/>
+  <rect x="274" y="390" width="352" height="75" rx="17" fill="#fff" fill-opacity=".9" stroke="#E6EAF3"/>
+  <circle cx="314" cy="428" r="20" fill="#E7F7F0"/><path d="M305 428h18m-9-9v18" stroke="#28B47F" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="349" y="422" fill="#29384E" font-family="Arial,sans-serif" font-size="12" font-weight="700">3 pasos automáticos · 0 tareas manuales</text><text x="349" y="443" fill="#7B8AA0" font-family="Arial,sans-serif" font-size="10">Cada proceso, en el lugar y momento justo.</text>
+  <circle cx="689" cy="411" r="22" fill="#fff" stroke="#E7EAF2"/><path d="M678 411h22m-11-11v22" stroke="#8C5AE8" stroke-width="2" stroke-linecap="round"/>
+</svg>
