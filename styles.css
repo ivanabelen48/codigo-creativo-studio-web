@@ -156,6 +156,7 @@ img, svg { display: block; }
 .project-open { position: absolute; right: 16px; bottom: 17px; color: #9ba8ba; font-size: 16px; transition: color .2s ease, transform .2s ease; }
 .project-card:hover .project-open { transform: translate(2px, -2px); color: var(--blue); }
 .portfolio-empty { padding: 25px 0; color: var(--muted); font-size: 14px; text-align: center; }
+.portfolio-empty[hidden] { display: none; }
 
 .faq-section { background: #fff; }
 .faq-heading { max-width: 760px; margin-bottom: 34px; }
@@ -189,6 +190,7 @@ img, svg { display: block; }
 .button-contact:hover { box-shadow: 0 12px 28px rgb(255 107 0 / 34%); }
 .contact-phone { position: relative; z-index: 1; display: block; width: fit-content; margin: 18px auto 0; color: #e4e9f8; font-size: 13px; font-weight: 600; transition: color .2s ease; }
 .contact-phone:hover, .contact-phone:focus-visible { color: #ffb36b; }
+.contact-card > .contact-location { margin: 10px 0 0; color: #aebbd7; font-size: 11px; }
 .contact-facebook { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 7px; margin-top: 15px; color: #d7e2ff; font-size: 12px; font-weight: 600; transition: color .2s ease; }
 .contact-facebook svg { width: 18px; height: 18px; }
 .contact-facebook:hover, .contact-facebook:focus-visible { color: #fff; }
@@ -199,6 +201,7 @@ img, svg { display: block; }
 .footer-inner { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .footer-inner > p { color: #8490a2; font-size: 10px; }
 .footer-inner > p > span:last-child { margin-left: 9px; padding-left: 11px; border-left: 1px solid #dce2eb; }
+.footer-location { display: block; margin-top: 4px; color: #a0a9b7; font-size: 9px; }
 .footer-heart { color: var(--orange); }
 .footer-phone { display: inline-flex; align-items: center; gap: 7px; color: #1877e8; font-size: 11px; font-weight: 700; white-space: nowrap; }
 .footer-phone svg { width: 16px; height: 16px; }

@@ -96,7 +96,7 @@
   function renderProjects(filter = "all") {
     const visibleProjects = projects.filter((project) => filter === "all" || project.category === filter);
     projectGrid.replaceChildren(...visibleProjects.map(createProjectCard));
-    emptyMessage.hidden = visibleProjects.length > 0;
+    emptyMessage.hidden = projectGrid.childElementCount > 0;
     const allCount = document.querySelector('[data-filter-count="all"]');
     allCount.textContent = String(projects.length).padStart(2, "0");
     observeReveals(projectGrid);
@@ -285,6 +285,6 @@
     targets.forEach((target) => revealObserver.observe(target));
   }
 
-  renderProjects();
+  renderProjects("all");
   observeReveals();
 })();

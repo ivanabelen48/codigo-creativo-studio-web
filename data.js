@@ -64,5 +64,15 @@ window.PROJECTS = [
     image: "assets/ejemplo-stock.png",
     media: { type: "image", src: "assets/ejemplo-stock.png", alt: "Ejemplo de sistema de stock y ventas" },
     tag: "SISTEMA WEB"
+  },
+  {
+    id: "asistente-virtual-whatsapp",
+    title: "Asistente Virtual con IA para WhatsApp",
+    category: "ai",
+    categoryLabel: "IA / Automatización",
+    description: "Ideal para atención al cliente 24/7. Responde consultas frecuentes, envía catálogos y agenda turnos automáticamente conectando inteligencia artificial con tu WhatsApp.",
+    image: "assets/project-ai.svg",
+    media: { type: "image", src: "assets/project-ai.svg", alt: "Ilustración de asistente virtual con inteligencia artificial" },
+    tag: "IA / AUTOMATIZACIÓN"
   }
 ];
