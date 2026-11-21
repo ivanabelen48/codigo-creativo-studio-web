@@ -3,7 +3,7 @@
 window.STUDIO_CONFIG = {
   whatsappNumber: "5493515155333",
   facebookUrl: "https://www.facebook.com/share/1FmYfrEkW4/",
-  whatsappMessage: "Hola Código Creativo Studio, tengo una idea y me gustaría consultarles"
+  whatsappMessage: "¡Hola! Bienvenido a Código Creativo Studio. Contanos tu idea con tranquilidad y confianza así podemos organizar una reunión y hacer realidad tu proyecto."
 };
 
 // Para sumar un proyecto, duplicá un objeto y completá sus datos:

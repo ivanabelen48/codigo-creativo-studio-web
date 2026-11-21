@@ -115,10 +115,8 @@ img, svg { display: block; }
 .portfolio { position: relative; overflow: hidden; background: var(--surface); }
 .portfolio-circuit { position: absolute; inset: 0; opacity: .34; background-image: radial-gradient(circle, #97b6ff 1px, transparent 1.5px), linear-gradient(90deg, transparent 49%, #dce7fa 50%, transparent 51%); background-size: 32px 32px, 88px 88px; mask-image: linear-gradient(90deg, transparent, #000 48%, transparent); pointer-events: none; }
 .portfolio .container { position: relative; z-index: 1; }
-.portfolio-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; max-width: none; margin-bottom: 28px; text-align: left; }
+.portfolio-heading { max-width: none; margin-bottom: 28px; text-align: left; }
 .portfolio-heading h2 { margin-bottom: 9px; }
-.project-count { padding: 0 0 5px 16px; border-left: 1px solid #dfe6f0; color: #77869a; font-size: 8px; font-weight: 700; letter-spacing: .13em; line-height: 1.8; }
-.project-count span { color: var(--blue); font-family: var(--font-display); font-size: 19px; letter-spacing: 0; }
 .filter-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 29px; }
 .filter-button { display: inline-flex; align-items: center; gap: 6px; min-height: 37px; padding: 0 14px; border: 1px solid #e4e9f1; border-radius: 30px; background: rgb(255 255 255 / 80%); color: #64748b; cursor: pointer; font-size: 11px; font-weight: 600; transition: all .2s ease; }
 .filter-button:hover { border-color: #b7c8e8; color: var(--blue); }
@@ -260,9 +258,8 @@ img, svg { display: block; }
   .service-card { min-height: auto; padding: 21px; }
   .service-icon { width: 45px; height: 45px; margin-bottom: 15px; }
   .service-card p { max-width: 470px; }
-  .portfolio-heading { align-items: start; margin-bottom: 21px; }
+  .portfolio-heading { margin-bottom: 21px; }
   .portfolio-heading h2 { font-size: clamp(31px, 8vw, 41px); }
-  .project-count { margin-top: 26px; }
   .filter-list { flex-wrap: nowrap; overflow-x: auto; margin: 0 -18px 23px; padding: 3px 18px 8px; scrollbar-width: none; }
   .filter-list::-webkit-scrollbar { display: none; }
   .filter-button { flex: 0 0 auto; min-height: 35px; padding-inline: 12px; }
@@ -293,8 +290,6 @@ img, svg { display: block; }
   .project-cover { aspect-ratio: 1.5; }
   .project-footer { min-height: 125px; }
   .project-meta { align-items: center; flex-direction: row; }
-  .portfolio-heading { gap: 5px; }
-  .project-count { padding-left: 9px; font-size: 7px; }
   .footer-inner > p > span:last-child { display: inline-block; margin: 5px 0 0; padding: 0; border: 0; }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -8,7 +8,7 @@
   const dialog = document.querySelector("#project-lightbox");
   const modalContent = document.querySelector("#modal-content");
   const filterButtons = [...document.querySelectorAll(".filter-button")];
-  const whatsappUrl = `https://wa.me/${encodeURIComponent(config.whatsappNumber || "TUNUMERO")}?text=${encodeURIComponent(config.whatsappMessage || "Hola Código Creativo Studio, tengo una idea y me gustaría consultarles")}`;
+  const whatsappUrl = `https://wa.me/${encodeURIComponent(config.whatsappNumber || "TUNUMERO")}?text=${encodeURIComponent(config.whatsappMessage || "¡Hola! Bienvenido a Código Creativo Studio. Contanos tu idea con tranquilidad y confianza así podemos organizar una reunión y hacer realidad tu proyecto.")}`;
 
   document.querySelectorAll("[data-whatsapp-link]").forEach((link) => {
     link.href = whatsappUrl;
@@ -94,7 +94,6 @@
     const visibleProjects = projects.filter((project) => filter === "all" || project.category === filter);
     projectGrid.replaceChildren(...visibleProjects.map(createProjectCard));
     emptyMessage.hidden = visibleProjects.length > 0;
-    document.querySelector("#project-count").textContent = String(visibleProjects.length).padStart(2, "0");
     const allCount = document.querySelector('[data-filter-count="all"]');
     allCount.textContent = String(projects.length).padStart(2, "0");
     observeReveals(projectGrid);
