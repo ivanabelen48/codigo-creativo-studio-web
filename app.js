@@ -3,6 +3,7 @@
 
   const config = window.STUDIO_CONFIG || {};
   const projects = Array.isArray(window.PROJECTS) ? window.PROJECTS : [];
+  const featuredProject = window.FEATURED_PROJECT;
   const projectGrid = document.querySelector("#project-grid");
   const emptyMessage = document.querySelector("#portfolio-empty");
   const dialog = document.querySelector("#project-lightbox");
@@ -24,7 +25,6 @@
     const card = document.createElement("button");
     card.type = "button";
     card.className = "project-card reveal";
-    if (project.featured) card.classList.add("is-featured");
     card.dataset.category = project.category;
     card.setAttribute("aria-label", `Ver proyecto: ${project.title}`);
 
@@ -235,6 +235,10 @@
     activeGalleryIndex = 0;
   });
   dialog.querySelector(".modal-close").addEventListener("click", () => dialog.close());
+  const featuredGalleryButton = document.querySelector("[data-open-featured-gallery]");
+  if (featuredGalleryButton && featuredProject) {
+    featuredGalleryButton.addEventListener("click", () => openProject(featuredProject, featuredGalleryButton));
+  }
   dialog.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") {
       event.preventDefault();

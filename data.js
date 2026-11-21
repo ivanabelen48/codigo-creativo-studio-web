@@ -6,7 +6,23 @@ window.STUDIO_CONFIG = {
   whatsappMessage: "¡Hola! Bienvenido a Código Creativo Studio. Contanos tu idea con tranquilidad y confianza así podemos organizar una reunión y hacer realidad tu proyecto."
 };
 
-// Para sumar un proyecto, duplicá un objeto y completá sus datos:
+// Credifi se muestra en su propio bloque destacado y usa esta galería en el modal.
+window.FEATURED_PROJECT = {
+  id: "credifi",
+  title: "Credifi — La App del Barrio",
+  category: "apps",
+  categoryLabel: "Apps móviles",
+  description: "Desarrollamos Credifi íntegramente desde cero: una solución real para digitalizar cuentas corrientes y el cuaderno de fiado de comercios, emprendedores, spas y profesionales. Permite cobrar con QR, acreditar pagos en efectivo, validar transferencias y enviar recordatorios automáticos por WhatsApp.",
+  image: "assets/credifi-1.png",
+  media: { type: "image", src: "assets/credifi-1.png", alt: "Credifi — pantalla principal de la app del barrio" },
+  gallery: [
+    { src: "assets/credifi-1.png", alt: "Credifi — pantalla principal de la app del barrio" },
+    { src: "assets/credifi-2.png", alt: "Credifi — gestión de cuentas y saldos" },
+    { src: "assets/credifi-3.png", alt: "Credifi — herramientas de gestión para comercios" }
+  ]
+};
+
+// Para sumar un ejemplo a la grilla, duplicá un objeto y completá sus datos:
 // - category: "apps", "software" o "ai" (controla los filtros).
 // - media.type: "image", "video", "youtube" o "facebook".
 // - image: portada opcional en assets/ (JPG, PNG o WebP); también sirve como
@@ -19,22 +35,6 @@ window.STUDIO_CONFIG = {
 // Guardá primero las fotos o videos nuevos en assets/ y mantené el resto de
 // la estructura de cada objeto. Las imágenes actuales son archivos PNG.
 window.PROJECTS = [
-  {
-    id: "credifi",
-    title: "Credifi — La App del Barrio (credifi.com.ar)",
-    category: "apps",
-    categoryLabel: "Apps móviles",
-    description: "Aplicación móvil y plataforma web desarrollada íntegramente a medida para digitalizar cuentas corrientes y el cuaderno de fiado de comercios, emprendedores, spas y profesionales. Permite cobrar con QR, gestionar señas y saldos en partes y reemplazar planillas manuales. Proyecto finalizado, publicado en credifi.com.ar y actualmente en revisión oficial en Google Play Store.",
-    image: "assets/credifi-1.png",
-    media: { type: "image", src: "assets/credifi-1.png", alt: "Credifi — pantalla principal de la app del barrio" },
-    gallery: [
-      { src: "assets/credifi-1.png", alt: "Credifi — pantalla principal de la app del barrio" },
-      { src: "assets/credifi-2.png", alt: "Credifi — gestión de cuentas y saldos" },
-      { src: "assets/credifi-3.png", alt: "Credifi — herramientas de gestión para comercios" }
-    ],
-    tag: "App Completa · En revisión en Google Play",
-    featured: true
-  },
   {
     id: "app-pedidos-delivery",
     title: "App de Pedidos y Delivery",
