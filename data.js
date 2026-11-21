@@ -11,6 +11,7 @@ window.STUDIO_CONFIG = {
 // - media.type: "image", "video", "youtube" o "facebook".
 // - image: portada opcional en assets/ (JPG, PNG o WebP); también sirve como
 //   miniatura para un video local o un enlace de YouTube/Facebook.
+// - gallery: lista opcional de imágenes { src, alt } para navegar en el modal.
 // - video: guardá el MP4 en assets/ y poné la ruta en media.src; media.poster
 //   acepta una miniatura opcional. Sin portada, se muestra una vista del video.
 // - youtube/facebook: poné el enlace público en media.src; se abrirá incrustado.
@@ -18,6 +19,22 @@ window.STUDIO_CONFIG = {
 // Guardá primero las fotos o videos nuevos en assets/ y mantené el resto de
 // la estructura de cada objeto. Las imágenes actuales son archivos PNG.
 window.PROJECTS = [
+  {
+    id: "credifi",
+    title: "Credifi — La App del Barrio (credifi.com.ar)",
+    category: "apps",
+    categoryLabel: "Apps móviles",
+    description: "Aplicación móvil y plataforma web desarrollada íntegramente a medida para digitalizar cuentas corrientes y el cuaderno de fiado de comercios, emprendedores, spas y profesionales. Permite cobrar con QR, gestionar señas y saldos en partes y reemplazar planillas manuales. Proyecto finalizado, publicado en credifi.com.ar y actualmente en revisión oficial en Google Play Store.",
+    image: "assets/credifi-1.png",
+    media: { type: "image", src: "assets/credifi-1.png", alt: "Credifi — pantalla principal de la app del barrio" },
+    gallery: [
+      { src: "assets/credifi-1.png", alt: "Credifi — pantalla principal de la app del barrio" },
+      { src: "assets/credifi-2.png", alt: "Credifi — gestión de cuentas y saldos" },
+      { src: "assets/credifi-3.png", alt: "Credifi — herramientas de gestión para comercios" }
+    ],
+    tag: "App Completa · En revisión en Google Play",
+    featured: true
+  },
   {
     id: "app-pedidos-delivery",
     title: "App de Pedidos y Delivery",

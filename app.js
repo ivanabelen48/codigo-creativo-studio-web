@@ -9,6 +9,8 @@
   const modalContent = document.querySelector("#modal-content");
   const filterButtons = [...document.querySelectorAll(".filter-button")];
   const whatsappUrl = `https://wa.me/${encodeURIComponent(config.whatsappNumber || "TUNUMERO")}?text=${encodeURIComponent(config.whatsappMessage || "¡Hola! Bienvenido a Código Creativo Studio. Contanos tu idea con tranquilidad y confianza así podemos organizar una reunión y hacer realidad tu proyecto.")}`;
+  let activeGalleryProject = null;
+  let activeGalleryIndex = 0;
 
   document.querySelectorAll("[data-whatsapp-link]").forEach((link) => {
     link.href = whatsappUrl;
@@ -22,6 +24,7 @@
     const card = document.createElement("button");
     card.type = "button";
     card.className = "project-card reveal";
+    if (project.featured) card.classList.add("is-featured");
     card.dataset.category = project.category;
     card.setAttribute("aria-label", `Ver proyecto: ${project.title}`);
 
@@ -99,8 +102,8 @@
     observeReveals(projectGrid);
   }
 
-  function createMedia(project) {
-    const media = project.media || { type: "image", src: project.image, alt: project.title };
+  function createMedia(project, selectedMedia) {
+    const media = selectedMedia || project.media || { type: "image", src: project.image, alt: project.title };
     if (media.type === "video") {
       const video = document.createElement("video");
       video.src = media.src;
@@ -152,12 +155,64 @@
   }
 
   function openProject(project, trigger) {
-    modalContent.replaceChildren(createMedia(project));
+    activeGalleryProject = project;
+    activeGalleryIndex = 0;
+    renderModalMedia();
     document.querySelector("#modal-title").textContent = project.title;
     document.querySelector("#modal-description").textContent = project.description || "";
     document.querySelector("#modal-category").textContent = project.categoryLabel || "";
     dialog.showModal();
     dialog.dataset.trigger = trigger ? "project-card" : "";
+  }
+
+  function renderModalMedia() {
+    const project = activeGalleryProject;
+    if (!project) return;
+
+    const gallery = Array.isArray(project.gallery) ? project.gallery : [];
+    if (gallery.length < 2) {
+      modalContent.replaceChildren(createMedia(project));
+      return;
+    }
+
+    const frame = document.createElement("div");
+    frame.className = "modal-gallery";
+    frame.append(createMedia(project, gallery[activeGalleryIndex]));
+
+    const previous = document.createElement("button");
+    previous.type = "button";
+    previous.className = "modal-gallery-nav modal-gallery-prev";
+    previous.textContent = "Anterior";
+    previous.setAttribute("aria-label", "Ver imagen anterior");
+    previous.addEventListener("click", () => moveGallery(-1));
+
+    const next = document.createElement("button");
+    next.type = "button";
+    next.className = "modal-gallery-nav modal-gallery-next";
+    next.textContent = "Siguiente";
+    next.setAttribute("aria-label", "Ver imagen siguiente");
+    next.addEventListener("click", () => moveGallery(1));
+
+    const counter = document.createElement("span");
+    counter.className = "modal-gallery-counter";
+    counter.setAttribute("aria-live", "polite");
+    counter.textContent = `${activeGalleryIndex + 1} / ${gallery.length}`;
+
+    frame.append(previous, next, counter);
+    modalContent.replaceChildren(frame);
+  }
+
+  function moveGallery(direction) {
+    const gallery = activeGalleryProject?.gallery;
+    if (!Array.isArray(gallery) || gallery.length < 2) return;
+    const focusedControl = document.activeElement?.classList.contains("modal-gallery-prev")
+      ? ".modal-gallery-prev"
+      : document.activeElement?.classList.contains("modal-gallery-next")
+        ? ".modal-gallery-next"
+        : "";
+    activeGalleryIndex = (activeGalleryIndex + direction + gallery.length) % gallery.length;
+    renderModalMedia();
+    if (focusedControl) modalContent.querySelector(focusedControl).focus();
   }
 
   filterButtons.forEach((button) => {
@@ -176,8 +231,19 @@
   });
   dialog.addEventListener("close", () => {
     modalContent.replaceChildren();
+    activeGalleryProject = null;
+    activeGalleryIndex = 0;
   });
   dialog.querySelector(".modal-close").addEventListener("click", () => dialog.close());
+  dialog.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      moveGallery(-1);
+    } else if (event.key === "ArrowRight") {
+      event.preventDefault();
+      moveGallery(1);
+    }
+  });
 
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector("#primary-menu");
