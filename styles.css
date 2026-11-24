@@ -144,7 +144,7 @@ img, svg { display: block; }
 .filter-button.is-active { border-color: var(--blue); background: var(--blue); color: #fff; box-shadow: 0 5px 14px rgb(0 102 255 / 18%); }
 .filter-button span { opacity: .7; font-size: 9px; }
 .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-.project-card { overflow: hidden; padding: 0; border: 1px solid #e9edf4; border-radius: 16px; background: #fff; box-shadow: 0 8px 30px rgb(18 37 74 / 5%); text-align: left; cursor: pointer; transition: transform .23s ease, box-shadow .23s ease; }
+.project-card { display: block; overflow: hidden; padding: 0; border: 1px solid #e9edf4; border-radius: 16px; background: #fff; box-shadow: 0 8px 30px rgb(18 37 74 / 5%); text-align: left; cursor: pointer; transition: transform .23s ease, box-shadow .23s ease; }
 .project-card.is-featured { border-color: rgb(0 102 255 / 28%); box-shadow: 0 12px 32px rgb(54 87 166 / 10%); }
 .project-card:hover, .project-card:focus-visible { transform: translateY(-5px); box-shadow: 0 18px 40px rgb(18 37 74 / 11%); }
 .project-cover { position: relative; overflow: hidden; display: block; aspect-ratio: 1.52; background: linear-gradient(135deg, #dceeff, #f1e7ff); }
@@ -159,6 +159,8 @@ img, svg { display: block; }
 .project-tag { overflow: hidden; color: #9aa5b5; font-size: 8px; font-weight: 700; letter-spacing: .07em; text-overflow: ellipsis; white-space: nowrap; }
 .project-title { margin-bottom: 7px; padding-right: 22px; font-family: var(--font-display); font-size: 17px; font-weight: 600; letter-spacing: -.035em; }
 .project-description { padding-right: 10px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.project-link-label { width: fit-content; margin-top: 12px; color: var(--blue); font-size: 11px; font-weight: 700; }
+.project-card:hover .project-link-label { color: #004dcc; }
 .project-open { position: absolute; right: 16px; bottom: 17px; color: #9ba8ba; font-size: 16px; transition: color .2s ease, transform .2s ease; }
 .project-card:hover .project-open { transform: translate(2px, -2px); color: var(--blue); }
 .portfolio-empty { padding: 25px 0; color: var(--muted); font-size: 14px; text-align: center; }

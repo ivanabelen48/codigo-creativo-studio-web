@@ -23,7 +23,7 @@ window.FEATURED_PROJECT = {
 };
 
 // Para sumar un ejemplo a la grilla, duplicá un objeto y completá sus datos:
-// - category: "apps", "software" o "ai" (controla los filtros).
+// - category: "webs", "apps", "software" o "ai" (controla los filtros).
 // - media.type: "image", "video", "youtube" o "facebook".
 // - image: portada opcional en assets/ (JPG, PNG o WebP); también sirve como
 //   miniatura para un video local o un enlace de YouTube/Facebook.
@@ -74,5 +74,15 @@ window.PROJECTS = [
     image: "assets/project-ai.svg",
     media: { type: "image", src: "assets/project-ai.svg", alt: "Ilustración de asistente virtual con inteligencia artificial" },
     tag: "IA / AUTOMATIZACIÓN"
+  },
+  {
+    id: "arqce-construcciones",
+    title: "Arqce Construcciones — Estudio de Arquitectura",
+    category: "webs",
+    categoryLabel: "Webs a medida",
+    description: "Sitio web institucional y catálogo interactivo de obras y proyectos desarrollado a medida para estudio de arquitectura en Villa Carlos Paz, con fichas técnicas, oficina técnica y consultas directas a WhatsApp.",
+    tag: "CLIENTE REAL · VILLA CARLOS PAZ",
+    url: "https://arqceconstrucciones.com.ar/",
+    linkLabel: "Visitar arqceconstrucciones.com.ar →"
   }
 ];

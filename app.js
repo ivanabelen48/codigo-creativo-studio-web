@@ -22,11 +22,18 @@
   document.querySelector("#current-year").textContent = new Date().getFullYear();
 
   function createProjectCard(project, index) {
-    const card = document.createElement("button");
-    card.type = "button";
+    const isExternalLink = Boolean(project.url);
+    const card = document.createElement(isExternalLink ? "a" : "button");
+    if (isExternalLink) {
+      card.href = project.url;
+      card.target = "_blank";
+      card.rel = "noopener";
+    } else {
+      card.type = "button";
+    }
     card.className = "project-card reveal";
     card.dataset.category = project.category;
-    card.setAttribute("aria-label", `Ver proyecto: ${project.title}`);
+    card.setAttribute("aria-label", isExternalLink ? project.linkLabel : `Ver proyecto: ${project.title}`);
 
     const cover = document.createElement("span");
     cover.className = "project-cover";
@@ -82,6 +89,12 @@
     const footer = document.createElement("span");
     footer.className = "project-footer";
     footer.append(meta, title, description);
+    if (isExternalLink && project.linkLabel) {
+      const linkLabel = document.createElement("span");
+      linkLabel.className = "project-link-label";
+      linkLabel.textContent = project.linkLabel;
+      footer.append(linkLabel);
+    }
     const arrow = document.createElement("span");
     arrow.className = "project-open";
     arrow.setAttribute("aria-hidden", "true");
@@ -89,7 +102,7 @@
     footer.append(arrow);
     card.append(cover, footer);
     card.style.setProperty("--card-index", index);
-    card.addEventListener("click", () => openProject(project, card));
+    if (!isExternalLink) card.addEventListener("click", () => openProject(project, card));
     return card;
   }
 
